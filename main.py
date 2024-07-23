@@ -12,12 +12,9 @@ from routes.ejemplo_kmeans import ejemplo_kmeans
 #Entrar a las dependecias de python:
 #source venv/bin/activate
 
+
 #Ejecutar para que configurar donde descarga las dependencias
-#pip3 config set global.trusted-host \
-#    "pypi.org files.pythonhosted.org pypi.python.org" \
-#    --trusted-host=pypi.python.org \
-#    --trusted-host=pypi.org \
-#    --trusted-host=files.pythonhosted.org
+# pip3 config set global.trusted-host "pypi.org files.pythonhosted.org pypi.python.org" --trusted-host=pypi.python.org --trusted-host=pypi.org --trusted-host=files.pythonhosted.org
 
 #instalar todas las dependencias 
 #pip install -r requirements.txt

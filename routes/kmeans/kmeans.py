@@ -7,4 +7,6 @@ router = APIRouter(prefix="/kmeans",
 
 @router.post('/entrenamiento')
 async def entrenamiento():
-    return {'kmeans':'entrenamiento'}                   
+    return {'kmeans':'entrenamiento'}        
+
+
