@@ -24,7 +24,7 @@ async def read_file_csv():
 
    #Se leen los datos para el analisis de posibles caracteristicas
    grafica_uno = seaborn.scatterplot(x='latitude',y='longitude',
-                                    data = datos,hue='median_house_value',palette="coolwarm")
+                                    data = datos, hue='median_house_value',palette="coolwarm")
    
 
    average_income = seaborn.scatterplot(x='latitude',y='longitude',data = datos,

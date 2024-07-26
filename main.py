@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from typing import Union
+# from config.database import conexion
 
 #import routes
 from routes.user import user
@@ -30,7 +31,12 @@ app.include_router(ejemplo_kmeans.router)
 
 @app.get('/')
 async def read_root():
-    return {'hello':'world'}
+    return {'Probando':'world'}
+
+# # Obtener datos de mysql
+# @app.get("/respuestas")
+# def get_respuestas():
+#     return conexion.execute(respuestas.select()).fetchall()
 
 @app.get('/items/{item_id}')
 async def read_item(item_id: int,q: Union[str, None] = None):
