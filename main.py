@@ -34,10 +34,6 @@ app.include_router(dbsan.router)
 async def read_root():
     return {'Probando':'world'}
 
-# # Obtener datos de mysql
-# @app.get("/respuestas")
-# def get_respuestas():
-#     return conexion.execute(respuestas.select()).fetchall()
 
 @app.get('/items/{item_id}')
 async def read_item(item_id: int,q: Union[str, None] = None):
