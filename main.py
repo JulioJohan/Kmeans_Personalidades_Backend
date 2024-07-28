@@ -6,6 +6,7 @@ from typing import Union
 from routes.user import user
 from routes.kmeans import kmeans
 from routes.ejemplo_kmeans import ejemplo_kmeans
+from routes.dbscan import dbsan
 
 #Instalar dependencias en python
 #python3 -m venv venv o python -m venv venv
@@ -28,7 +29,7 @@ app = FastAPI()
 app.include_router(user.router)
 app.include_router(kmeans.router)
 app.include_router(ejemplo_kmeans.router)
-
+app.include_router(dbsan.router)
 @app.get('/')
 async def read_root():
     return {'Probando':'world'}
